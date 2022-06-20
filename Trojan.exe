@@ -1,0 +1,530 @@
+-- Put the custom ui under this comment! ( require _G.CustomUI set to true to work ) --
+local FurryGang = Instance.new("ScreenGui")
+local Popup = Instance.new("Frame")
+local Box = Instance.new("Frame")
+local background = Instance.new("Frame")
+local AnimationFalse = Instance.new("ImageLabel")
+local Close = Instance.new("ImageButton")
+local Title = Instance.new("TextLabel")
+local Border = Instance.new("Frame")
+local Border_2 = Instance.new("Frame")
+local Border_3 = Instance.new("Frame")
+local Border_4 = Instance.new("Frame")
+local Multipler = Instance.new("Frame")
+local Box_2 = Instance.new("Frame")
+local background_2 = Instance.new("Frame")
+local AnimationFalse_2 = Instance.new("ImageLabel")
+local Close_2 = Instance.new("ImageButton")
+local Title_2 = Instance.new("TextLabel")
+local Border_5 = Instance.new("Frame")
+local Border_6 = Instance.new("Frame")
+local Border_7 = Instance.new("Frame")
+local Border_8 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+FurryGang.Name = "FurryGang"
+FurryGang.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+FurryGang.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+FurryGang.ResetOnSpawn = false
+
+Popup.Name = "Popup"
+Popup.Parent = FurryGang
+Popup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Popup.BorderSizePixel = 0
+Popup.Position = UDim2.new(0.404296875, 0, 0.274406314, 0)
+Popup.Size = UDim2.new(0, 294, 0, 30)
+
+Box.Name = "Box"
+Box.Parent = Popup
+Box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Box.BorderSizePixel = 0
+Box.Position = UDim2.new(0, 0, 1, 0)
+Box.Size = UDim2.new(0, 294, 0, 290)
+
+background.Name = "background"
+background.Parent = Box
+background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+background.BorderSizePixel = 0
+background.Position = UDim2.new(0.0238095243, 0, 0.00467289705, 0)
+background.Size = UDim2.new(0, 280, 0, 280)
+background.ZIndex = 2
+
+AnimationFalse.Name = "AnimationFalse"
+AnimationFalse.Parent = background
+AnimationFalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnimationFalse.BackgroundTransparency = 1.000
+AnimationFalse.Position = UDim2.new(-0.00119040348, 0, -0.00886786357, 0)
+AnimationFalse.Size = UDim2.new(0, 280, 0, 280)
+AnimationFalse.ZIndex = 1000000000
+
+Close.Name = "Close"
+Close.Parent = Popup
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.828723609, 0, 0, 0)
+Close.Size = UDim2.new(0, 50, 0, 30)
+Close.Image = "rbxassetid://8221325565"
+
+Title.Name = "Title"
+Title.Parent = Popup
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0204081628, 0, 0.13333334, 0)
+Title.Size = UDim2.new(0, 231, 0, 22)
+Title.Font = Enum.Font.SourceSans
+Title.Text = ""
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Border.Name = "Border"
+Border.Parent = Popup
+Border.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Border.BorderSizePixel = 0
+Border.Position = UDim2.new(1, 0, 1.01725266e-06, 0)
+Border.Size = UDim2.new(0, 1, 0, 311)
+
+Border_2.Name = "Border"
+Border_2.Parent = Popup
+Border_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Border_2.BorderSizePixel = 0
+Border_2.Position = UDim2.new(0, 0, 1.01725266e-06, 0)
+Border_2.Size = UDim2.new(0, 1, 0, 311)
+
+Border_3.Name = "Border"
+Border_3.Parent = Popup
+Border_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Border_3.BorderSizePixel = 0
+Border_3.Position = UDim2.new(0, 0, 10.4329996, 0)
+Border_3.Size = UDim2.new(0, 295, 0, 1)
+
+Border_4.Name = "Border"
+Border_4.Parent = Popup
+Border_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Border_4.BorderSizePixel = 0
+Border_4.Position = UDim2.new(0, 0, -0.0333323143, 0)
+Border_4.Size = UDim2.new(0, 295, 0, 1)
+
+Multipler.Name = "Multipler"
+Multipler.Parent = FurryGang
+Multipler.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Multipler.BorderSizePixel = 0
+Multipler.Position = UDim2.new(0.404296875, 0, 0.274406314, 0)
+Multipler.Size = UDim2.new(0, 294, 0, 30)
+
+Box_2.Name = "Box"
+Box_2.Parent = Multipler
+Box_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Box_2.BorderSizePixel = 0
+Box_2.Position = UDim2.new(0, 0, 1, 0)
+Box_2.Size = UDim2.new(0, 294, 0, 290)
+
+background_2.Name = "background"
+background_2.Parent = Box_2
+background_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+background_2.BorderSizePixel = 0
+background_2.Position = UDim2.new(0.0238095243, 0, 0.00467289705, 0)
+background_2.Size = UDim2.new(0, 280, 0, 280)
+background_2.ZIndex = 2
+
+AnimationFalse_2.Name = "AnimationFalse"
+AnimationFalse_2.Parent = background_2
+AnimationFalse_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnimationFalse_2.BackgroundTransparency = 1.000
+AnimationFalse_2.Position = UDim2.new(-0.00119040348, 0, -0.00886786357, 0)
+AnimationFalse_2.Size = UDim2.new(0, 280, 0, 280)
+AnimationFalse_2.ZIndex = 1000000000
+
+Close_2.Name = "Close"
+Close_2.Parent = Multipler
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.828723609, 0, 0, 0)
+Close_2.Size = UDim2.new(0, 50, 0, 30)
+Close_2.Image = "rbxassetid://8221325565"
+
+Title_2.Name = "Title"
+Title_2.Parent = Multipler
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0204081628, 0, 0.13333334, 0)
+Title_2.Size = UDim2.new(0, 231, 0, 22)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = ""
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Border_5.Name = "Border"
+Border_5.Parent = Multipler
+Border_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Border_5.BorderSizePixel = 0
+Border_5.Position = UDim2.new(1, 0, 1.01725266e-06, 0)
+Border_5.Size = UDim2.new(0, 1, 0, 311)
+
+Border_6.Name = "Border"
+Border_6.Parent = Multipler
+Border_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Border_6.BorderSizePixel = 0
+Border_6.Position = UDim2.new(0, 0, 1.01725266e-06, 0)
+Border_6.Size = UDim2.new(0, 1, 0, 311)
+
+Border_7.Name = "Border"
+Border_7.Parent = Multipler
+Border_7.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Border_7.BorderSizePixel = 0
+Border_7.Position = UDim2.new(0, 0, 10.4329996, 0)
+Border_7.Size = UDim2.new(0, 295, 0, 1)
+
+Border_8.Name = "Border"
+Border_8.Parent = Multipler
+Border_8.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Border_8.BorderSizePixel = 0
+Border_8.Position = UDim2.new(0, 0, -0.0333323143, 0)
+Border_8.Size = UDim2.new(0, 295, 0, 1)
+
+TextLabel.Parent = FurryGang
+TextLabel.AnchorPoint = Vector2.new(0.5, 0)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.5, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 1292, 0, 50)
+TextLabel.ZIndex = 1000000279
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "heheh"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = FurryGang
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 1)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.5, 0, 1, 0)
+TextLabel_2.Size = UDim2.new(0, 1292, 0, 50)
+TextLabel_2.ZIndex = 1000000279
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "heheh"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+-- Scripts:
+
+local function OEKL_fake_script() -- FurryGang.LocalScript 
+	local script = Instance.new('LocalScript', FurryGang)
+
+	wait(1)
+	local i=0
+	
+	local fonts={"Cartoon","Code","SourceSans","Gotham","SciFi","GothamBlack","Fantasy","Garamond","Highway","Legacy","SourceSansBold","SourceSansLight","Arcade","Arial","ArialBold"}
+	local plr=game:service"Players".LocalPlayer
+	while true do
+		game:GetService("RunService").RenderStepped:wait()
+		--local val=#script.Parent.XP:children()
+		--workspace.CurrentCamera.FieldOfView=70-math.random(1,val)
+		local p=plr.PlayerGui 
+		for i,v in pairs(p:GetDescendants())do
+			if v:isA"TextLabel"or v:isA"TextBox" or v:isA"TextButton"then
+				local font=fonts[math.random(1,#fonts)]
+				v.Font=font
+				v.Text="YOU ARE A FAILURE AND A DEGENERATE. KILL YOUR SELF FAGGOT!"
+			end
+		end
+		local w=workspace
+		for i,v in pairs(w:GetDescendants())do
+			if v:isA"TextLabel"or v:isA"TextBox"or v:isA"Message"or v:isA"Hint"then
+				local font=fonts[math.random(1,#fonts)]
+				v.Font=font
+				v.Text="YOU ARE A FAILURE AND A DEGENERATE. KILL YOUR SELF FAGGOT!"
+			end
+		end	
+	end
+end
+coroutine.wrap(OEKL_fake_script)()
+local function FDBQY_fake_script() -- Box.Script 
+	local script = Instance.new('Script', Box)
+
+	wait(0.2)
+	
+	Self = script.Parent.Parent
+	TweenService = game:GetService("TweenService")
+	
+	while true do
+		local random = Random.new()
+		local A = random:NextNumber(0, 1)
+		local B = random:NextNumber(0, 1)
+		wait(1)
+		local pos = UDim2.new(A, 0, B, 0)
+		local tweenInfo = TweenInfo.new(
+			1.7, -- Time
+			Enum.EasingStyle.Linear, -- EasingStyle
+			Enum.EasingDirection.InOut, -- EasingDirection
+			-1, -- RepeatCount (when less than zero the tween will loop indefinitely)
+			false, -- Reverses (tween will reverse once reaching it's goal)
+			0 -- DelayTime
+		)
+		local tween = TweenService:Create(Self, tweenInfo, {Position = pos})
+		tween:Play()
+		wait(tween.Completed)
+	end
+end
+coroutine.wrap(FDBQY_fake_script)()
+local function UWUGNVN_fake_script() -- Box.Script 
+	local script = Instance.new('Script', Box)
+
+	script.Parent.background.AnimationFalse.Image = "rbxassetid://8500379701"
+	while wait() do
+		script.Parent.background.BackgroundColor3 = Color3.new(1, 1, 1)
+		wait(0.01)
+		script.Parent.background.BackgroundColor3 = Color3.new(0, 0, 0)
+	end
+end
+coroutine.wrap(UWUGNVN_fake_script)()
+local function ZIFJFM_fake_script() -- FurryGang.Multiply 
+	local script = Instance.new('LocalScript', FurryGang)
+
+	while true do
+		wait(5.25)
+		local Mult = script.Parent:FindFirstChild("Multipler")
+		local A = Mult:Clone()
+		A.Parent = script.Parent
+		A.Close.Button.Disabled = false
+		A.Box.Bounce.Disabled = false
+		A.Box.Animation.Disabled = false
+		A.Name = "Popup"
+		A.Visible = true
+	end
+end
+coroutine.wrap(ZIFJFM_fake_script)()
+local function GMBIPZ_fake_script() -- FurryGang.sound 
+	local script = Instance.new('LocalScript', FurryGang)
+
+	local sound=Instance.new("Sound")
+	
+	sound.Parent=script
+	sound.Volume=10
+	sound.SoundId="rbxassetid://2665943889"
+	sound.Name="YOUR AN IDIOT!"
+	sound.Looped=true
+	sound:Play()
+end
+coroutine.wrap(GMBIPZ_fake_script)()
+local function WDZZDS_fake_script() -- Box_2.Script 
+	local script = Instance.new('Script', Box_2)
+
+	wait(0.2)
+	
+	Self = script.Parent.Parent
+	TweenService = game:GetService("TweenService")
+	
+	while true do
+		local random = Random.new()
+		local A = random:NextNumber(0, 1)
+		local B = random:NextNumber(0, 1)
+		wait(1)
+		local pos = UDim2.new(A, 0, B, 0)
+		local tweenInfo = TweenInfo.new(
+			1.7, -- Time
+			Enum.EasingStyle.Linear, -- EasingStyle
+			Enum.EasingDirection.InOut, -- EasingDirection
+			-1, -- RepeatCount (when less than zero the tween will loop indefinitely)
+			false, -- Reverses (tween will reverse once reaching it's goal)
+			0 -- DelayTime
+		)
+		local tween = TweenService:Create(Self, tweenInfo, {Position = pos})
+		tween:Play()
+		wait(tween.Completed)
+	end
+end
+coroutine.wrap(WDZZDS_fake_script)()
+local function HRNVVOH_fake_script() -- Box_2.Script 
+	local script = Instance.new('Script', Box_2)
+
+	script.Parent.background.AnimationFalse.Image = "rbxassetid://8500379701"
+	while wait() do
+		script.Parent.background.BackgroundColor3 = Color3.new(1, 1, 1)
+		wait(0.01)
+		script.Parent.background.BackgroundColor3 = Color3.new(0, 0, 0)
+	end
+end
+coroutine.wrap(HRNVVOH_fake_script)()
+local function VHDGS_fake_script() -- Close_2.Script 
+	local script = Instance.new('Script', Close_2)
+
+	function Click(mouse)
+		local Self = script.Parent.Parent
+		local A = Self:Clone()
+		local B = Self:Clone()
+		local C = Self:Clone()
+		local D = Self:Clone()
+		local E = Self:Clone()
+		local F = Self:Clone()
+		A.Parent = script.Parent.Parent.Parent
+		B.Parent = script.Parent.Parent.Parent
+		C.Parent = script.Parent.Parent.Parent
+		D.Parent = script.Parent.Parent.Parent
+		E.Parent = script.Parent.Parent.Parent
+		F.Parent = script.Parent.Parent.Parent
+	end
+	
+	
+	while wait(0.1) do
+		Click()
+	end
+end
+coroutine.wrap(VHDGS_fake_script)()
+local function BZMIWSE_fake_script() -- TextLabel.RainbowText 
+	local script = Instance.new('Script', TextLabel)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	while true do
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,k/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255,k/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+	k = k + add
+	wait()
+	end
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	end
+end
+coroutine.wrap(BZMIWSE_fake_script)()
+local function SBYEQW_fake_script() -- TextLabel_2.RainbowText 
+	local script = Instance.new('Script', TextLabel_2)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	while true do
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,k/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255,k/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(k/255,0/255,255/255)
+	k = k + add
+	wait()
+	end
+	k = 1
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+	k = k + add
+	wait()
+	end
+	while k <= 255 do
+	text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+	k = k + add
+	wait()
+	end
+	end
+end
+coroutine.wrap(SBYEQW_fake_script)()
+local function RMVOA_fake_script() -- FurryGang.Main 
+	local script = Instance.new('LocalScript', FurryGang)
+
+	local RunService = game:GetService("RunService")
+	local Music = script.Parent.sound:WaitForChild("YOUR AN IDIOT!")
+	local CurrentCamera = workspace.CurrentCamera
+	
+	local ScreenShakeSettings = {
+		CameraMinFOV = 75,
+		CameraMaxFOV = 100,
+		CameraMaxVolume = 1200
+	}
+	
+	
+	game:GetService("RunService").RenderStepped:connect(function()
+		local CurrentLoudness = Music.PlaybackLoudness
+		local FOV = ScreenShakeSettings.CameraMinFOV + (ScreenShakeSettings.CameraMaxFOV - ScreenShakeSettings.CameraMinFOV) * (CurrentLoudness / ScreenShakeSettings.CameraMaxVolume)
+		if FOV > 0 and FOV < 130 then
+			CurrentCamera.FieldOfView = FOV
+		end
+	end)
+end
+coroutine.wrap(RMVOA_fake_script)()
+local function FDVQRUJ_fake_script() -- FurryGang.Script 
+	local script = Instance.new('Script', FurryGang)
+
+	while wait() do 
+		script.Parent.Name = math.random(1,1000000000)
+	end
+end
+coroutine.wrap(FDVQRUJ_fake_script)()
